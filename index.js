@@ -51,7 +51,7 @@ const userModel = mongoose.model("user", userSchema);
 
 //api
 app.use("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "./frontend/build/index.html"));
+  res.sendFile(path.join(__dirname, "./frontend/public/index.html"));
 });
 
 //sign up
